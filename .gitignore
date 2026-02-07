@@ -1,0 +1,5 @@
+.env
+my_new_venv
+__pycache__
+logs
+.vscode
