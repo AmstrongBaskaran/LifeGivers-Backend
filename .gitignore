@@ -1,0 +1,6 @@
+.env
+my_new_venv
+__pycache__
+logs
+.vscode
+test_donation_storage.py

@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-dotenv
+cloudinary
+bcrypt
+python-jose[cryptography]
+pydantic
+python-multipart
+# Add any other libraries if needed
