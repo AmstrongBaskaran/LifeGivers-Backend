@@ -4,7 +4,7 @@ class UserCreate(BaseModel):
     fullname : str
     phone_number : str
     password : str
-    role: str = "user"
+    # role: str = "user"
     
 
 class UserResponse(BaseModel):
