@@ -21,8 +21,7 @@ def register_user(data: UserCreate, db: Session = Depends(get_db)):
     new_user = User(
         fullname=data.fullname,
         phone_number=data.phone_number,
-        password=hashed_pass,
-        role=data.role # "user" or "admin"
+        password=hashed_pass
     )
     
     db.add(new_user)
