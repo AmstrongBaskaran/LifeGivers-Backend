@@ -123,9 +123,7 @@ def update_status(fundraiser_id: int, status: str, story_text: str | None = None
     return {"message": f"Fundraiser is now {status}"}
 
 
-# -----------------------------------------------------------------
 # 4. DELETE & UPDATE
-# -----------------------------------------------------------------
 @router.delete("/{fundraiser_id}")
 def delete_fundraiser(fundraiser_id: int, db: Session = Depends(get_db)):
     fundraiser = db.query(FundraiserMaster).filter(FundraiserMaster.fundraiser_id == fundraiser_id).first()
